@@ -44,4 +44,4 @@ This project is very bare bones; it could be improved in a few ways:
 
  * Distribution - Currently the built in PHP web server is being used, this is not suitable for a production deployment. Depending on the deployment, a new docker container should be created with a webserver base.
  * Dependency Injection - BirthdayCalculator could probably be better implemented with dependency injection, but for the sake of time I have left it as is
-
+ * Further Tests - More tests could be added for the Person model, and the PeopleController
