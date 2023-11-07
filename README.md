@@ -12,7 +12,7 @@ Main points of interests will be:
 [BirthdayCalculator.php](https://github.com/tylergets/birthday-mongo-api/blob/master/app/Services/BirthdayCalculator.php)
 [PeopleController.php](https://github.com/tylergets/birthday-mongo-api/blob/master/app/Http/Controllers/PeopleController.php)
 [Person.php](https://github.com/tylergets/birthday-mongo-api/blob/master/app/Models/Person.php)
-
+[Rules/](https://github.com/tylergets/birthday-mongo-api/tree/master/app/Rules)
 There were no dependencies added besides MongoDB Eloquent Provider
 
 ## Details
@@ -38,3 +38,5 @@ docker exec -it api ./vendor/bin/phpunit
 This project is very bare bones; it could be improved in a few ways:
 
  * Distribution - Currently the built in PHP web server is being used, this is not suitable for a production deployment. Depending on the deployment, a new docker container should be created with a webserver base.
+ * Dependency Injection - BirthdayCalculator could probably be better implemented with dependency injection, but for the sake of time I have left it as is
+
