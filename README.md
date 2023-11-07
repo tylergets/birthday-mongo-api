@@ -9,10 +9,15 @@ For ease of running the project, I have included the .env in the repository; thi
 Main points of interests will be:
 
 [BirthdayCalculatorTest.php](https://github.com/tylergets/birthday-mongo-api/blob/master/tests/BirthdayCalculatorTest.php)
+
 [BirthdayCalculator.php](https://github.com/tylergets/birthday-mongo-api/blob/master/app/Services/BirthdayCalculator.php)
+
 [PeopleController.php](https://github.com/tylergets/birthday-mongo-api/blob/master/app/Http/Controllers/PeopleController.php)
+
 [Person.php](https://github.com/tylergets/birthday-mongo-api/blob/master/app/Models/Person.php)
+
 [Rules/](https://github.com/tylergets/birthday-mongo-api/tree/master/app/Rules)
+
 There were no dependencies added besides MongoDB Eloquent Provider
 
 ## Details
