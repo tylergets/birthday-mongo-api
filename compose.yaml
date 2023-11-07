@@ -1,0 +1,44 @@
+{
+  "version": "3.8",
+  "services": {
+      "db": {
+          image: "mongo:latest",
+          env_file: ".env",
+          ports: [
+            {
+              target: 27017,
+              published: 27017
+            }
+          ]
+      },
+      "mongo-express": {
+         image: "mongo-express",
+         ports: [
+            "8081:8081"
+         ],
+         env_file: .env
+      },
+      "api": {
+        build: {
+           dockerfile: "Dockerfile"
+        },
+        container_name: "api",
+        command: "php -S 0.0.0.0:8000 -t public",
+        env_file: ".env",
+        working_dir: "/app",
+        volumes: [
+          {
+            target: "/app",
+            source: "./",
+            type: 'bind'
+          }
+        ],
+        ports: [
+          {
+            target: 8000,
+            published: 8000,
+          }
+        ]
+      }
+  }
+}
